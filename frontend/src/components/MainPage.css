@@ -1,0 +1,72 @@
+/* src/components/MainPage.css */
+
+@import '../index.css'; /* Use global styles and variables */
+
+/* Main Page Styles */
+.main-page {
+  background-color: var(--background);
+  color: var(--neutral-white);
+  min-height: 100vh;
+  padding-top: var(--spacing-lg);
+}
+
+
+.main-page-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Scrollable Coffee Section */
+.main-page-scrollable-container {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-lg);
+  background-color: var(--primary-light);
+  align-items: center;
+}
+
+.main-page-scrollable-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.main-page-scrollable-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-dark);
+  border-radius: 10px;
+}
+
+/* Coffee Card Styles */
+.main-page-coffee-option {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page-image-container {
+  width: 130px;
+  height: 100px;
+  background-color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--spacing-xs);
+  border: 2px solid var(--primary-dark);
+  padding: var(--spacing-xs);
+}
+
+.main-page-coffee-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.main-page-coffee-label {
+  color: var(--primary-dark);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-sm);
+}
